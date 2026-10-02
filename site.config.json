@@ -1,0 +1,96 @@
+{
+  "schema": "nuxtjp://localized-site/site-config/v1",
+  "siteId": "be2o-orchestration-site",
+  "serviceId": "be2o-orchestration",
+  "origin": "https://be2o.site",
+  "audienceScope": "japan",
+  "defaultLocale": "ja",
+  "fallbackLocale": "en",
+  "prefixDefaultLocale": false,
+  "locales": ["ja", "en"],
+  "externalActions": false,
+  "content": {
+    "ja": {
+      "brand": "BE2O Business Orchestration",
+      "tagline": "AI時代の業務目的、判断、Processを実行可能なScenarioへつなぐ経営知識",
+      "summary": "BE2OはBusiness Engineering to Orchestrationとして、業務目的、制約、判断、役割、ProcessをVendor中立のScenarioへ変換する方法を提供します。NERPやHibee等の活用を経営視点で紹介しますが、個別企業への経営・法務・会計・投資助言やWorkflow実行は行いません。",
+      "features": [
+        {"id": "objective-model", "title": "目的と制約のモデル化", "summary": "成果、指標、期限、責任者、法令・予算・情報境界を、手段を選ぶ前に整理します。"},
+        {"id": "decision-to-scenario", "title": "判断からScenarioへ", "summary": "未確定の論点、承認済みの決定、Task、例外、報告を追跡可能な実行案へ変換します。"},
+        {"id": "product-guidance", "title": "製品活用ガイド", "summary": "NERP、Hibee、TPAR、Constillo等を、目的とLocal-first境界に応じて組み合わせる考え方を示します。"}
+      ],
+      "docs": {
+        "overview": {
+          "slug": "/docs",
+          "title": "BE2Oの概要",
+          "summary": "経営目的から実行Scenarioへ落とす知識領域と責任境界を説明します。",
+          "sections": [
+            {"id": "orchestration-method", "title": "Business Orchestration", "body": ["現状、目的、制約、判断権限、入力、成果、例外、測定を一つの連鎖として設計します。特定Vendorの製品導入を先に決めず、必要なInterfaceから実現手段を選びます。"]},
+            {"id": "advisory-boundary", "title": "一般的な経営情報", "body": ["公開内容は業務設計を検討するための一般情報です。会社固有の契約、税務、会計、法務、労務、投資判断は、最新情報と適切な専門家・責任者の確認が必要です。"]}
+          ]
+        },
+        "gettingStarted": {
+          "slug": "/docs/getting-started",
+          "title": "業務Scenarioを設計する",
+          "summary": "製品選定より先に目的と判断境界を整える手順です。",
+          "sections": [
+            {"id": "frame-outcome", "title": "成果を定義する", "body": ["誰にどの価値を、いつまでに、どの指標で提供するかを定めます。現在値、制約、対象外、許容できない失敗を明示し、事実と仮定を分けます。"]},
+            {"id": "select-boundaries", "title": "実現境界を選ぶ", "body": ["機密情報はLocal-firstを優先し、意思決定はTPAR、計画・検証はConstillo、外部連携はZixcel等、独立した責務へ割り当てます。利用可能性を確認してからNERPやHibeeの操作面を選びます。"]}
+          ]
+        },
+        "security": {
+          "slug": "/docs/security",
+          "title": "業務設計情報の安全性",
+          "summary": "経営情報、顧客情報、AI入力、外部実行を分離する原則です。",
+          "sections": [
+            {"id": "information-classification", "title": "情報を分類する", "body": ["公開、社内、機密、顧客、個人を区分し、AIや外部Serviceへ渡す前に目的と最小項目を定めます。公開Scenarioへ顧客名、契約条件、資格情報、個人記録を含めません。"]},
+            {"id": "no-execution", "title": "公開サイトは実行しない", "body": ["このサイトはWorkflow、AI Agent、外部API、通知、契約、決済を開始しません。掲載Scenarioは設計例であり、承認と実行は各組織の責任ある境界で行います。"]}
+          ]
+        }
+      },
+      "privacy": {"label": "プライバシー", "summary": "公開サイトは事業計画、顧客情報、従業員情報、AI Prompt、利用製品の操作履歴を収集しません。個別ScenarioはLocal-first環境で分類、保持、共有を管理してください。"},
+      "contact": {"label": "BE2Oに関する連絡", "summary": "方法論や公開記事への意見は、be2o.siteで確認済みとして案内される窓口へ公開可能な質問だけを送ってください。個別企業の資料、法務・会計資料、顧客情報を送らないでください。"}
+    },
+    "en": {
+      "brand": "BE2O Business Orchestration",
+      "tagline": "Management knowledge that turns AI-era objectives, decisions, and processes into executable scenarios",
+      "summary": "BE2O, Business Engineering to Orchestration, provides methods for translating objectives, constraints, decisions, roles, and processes into vendor-neutral scenarios. It introduces products such as NERP and Hibee from a management perspective but does not provide company-specific management, legal, accounting, investment advice, or workflow execution.",
+      "features": [
+        {"id": "objective-model", "title": "Model objectives and constraints", "summary": "Structures outcomes, measures, deadlines, owners, and legal, budget, and information boundaries before selecting tools."},
+        {"id": "decision-to-scenario", "title": "Decision to scenario", "summary": "Turns unresolved issues, approved decisions, tasks, exceptions, and reports into a traceable execution proposal."},
+        {"id": "product-guidance", "title": "Product guidance", "summary": "Explains how to combine NERP, Hibee, TPAR, Constillo, and related products according to purpose and local-first boundaries."}
+      ],
+      "docs": {
+        "overview": {
+          "slug": "/docs",
+          "title": "BE2O overview",
+          "summary": "Explains the knowledge area and accountability boundary from management objectives to execution scenarios.",
+          "sections": [
+            {"id": "orchestration-method", "title": "Business orchestration", "body": ["Design current state, objective, constraints, decision authority, input, outcome, exception, and measurement as one chain. Select implementation from required interfaces instead of committing to a vendor first."]},
+            {"id": "advisory-boundary", "title": "General management information", "body": ["Published material supports business-design review as general information. Company-specific contracts, tax, accounting, legal, labor, and investment decisions require current facts and review by the appropriate professional and accountable owner."]}
+          ]
+        },
+        "gettingStarted": {
+          "slug": "/docs/getting-started",
+          "title": "Design a business scenario",
+          "summary": "A sequence for establishing objectives and decision boundaries before choosing products.",
+          "sections": [
+            {"id": "frame-outcome", "title": "Define the outcome", "body": ["State what value is delivered, to whom, by when, and with which measure. Record the current baseline, constraints, exclusions, and unacceptable failures, separating facts from assumptions."]},
+            {"id": "select-boundaries", "title": "Select implementation boundaries", "body": ["Prefer local-first handling for confidential data and assign independent responsibilities: TPAR for decisions, Constillo for planning and validation, and Zixcel for external integration. Choose NERP or Hibee interfaces only after checking availability."]}
+          ]
+        },
+        "security": {
+          "slug": "/docs/security",
+          "title": "Business-design information security",
+          "summary": "Principles for separating management data, customer data, AI input, and external execution.",
+          "sections": [
+            {"id": "information-classification", "title": "Classify information", "body": ["Separate public, internal, confidential, customer, and personal information and define purpose and minimum fields before using AI or external services. Do not place customer names, contract terms, credentials, or personal records in public scenarios."]},
+            {"id": "no-execution", "title": "The public site does not execute", "body": ["This site cannot start workflows, AI agents, external APIs, notifications, contracts, or payments. Published scenarios are design examples; approval and execution belong to each organization's accountable boundary."]}
+          ]
+        }
+      },
+      "privacy": {"label": "Privacy", "summary": "The public site collects no business plans, customer or employee information, AI prompts, or product-operation history. Manage classification, retention, and sharing for individual scenarios in a local-first environment."},
+      "contact": {"label": "BE2O contact", "summary": "Send feedback about the method or public articles through a verified channel identified on be2o.site using only a publishable question. Do not send company records, legal or accounting material, or customer data."}
+    }
+  }
+}
