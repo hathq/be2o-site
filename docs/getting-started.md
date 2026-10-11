@@ -4,11 +4,11 @@ Present methods for business and product design in the AI era.
 
 ## Before you start
 
-Published guidance does not execute a workflow or provide individual advice. The required localized-site package is referenced as an excluded local archive; a fresh clone cannot install it until an approved distribution path is available. No deployment is performed by these instructions.
+Published guidance does not execute a workflow or provide individual advice. The declared `@nuxtjp/localized-site@0.1.0` dependency is obtained from the official npm registry using the frozen lockfile. No deployment is performed by these instructions.
 
 ## First steps
 
-Make the exact declared dependency artifacts available before installation. Local archives are excluded from Git; registry publication remains pending.
+Install the exact published dependency versions from the official npm registry using the frozen lockfile. No local package archives are required.
 
 Run from the repository root:
 

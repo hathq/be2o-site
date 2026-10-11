@@ -9,11 +9,11 @@ Present methods for business and product design in the AI era.
 
 ## Current scope
 
-Published guidance does not execute a workflow or provide individual advice. The required localized-site package is referenced as an excluded local archive; a fresh clone cannot install it until an approved distribution path is available. No deployment is performed by these instructions.
+Published guidance does not execute a workflow or provide individual advice. The declared `@nuxtjp/localized-site@0.1.0` dependency is obtained from the official npm registry using the frozen lockfile. No deployment is performed by these instructions.
 
 ## Getting started
 
-The manifest currently requires locally supplied package archives: `@nuxtjp/localized-site`. These archives are excluded from Git. Obtain the exact approved dependency artifacts before installing; a fresh clone alone is not sufficient. Registry distribution remains pending.
+The manifest and frozen lockfile resolve `@nuxtjp/localized-site@0.1.0` from the official npm registry. Install the pinned versions with the command below; no local package archives or neighboring source checkouts are required.
 
 Use `pnpm@10.29.3` and the Node.js version declared in `engines` in `package.json`. Run from this repository:
 
